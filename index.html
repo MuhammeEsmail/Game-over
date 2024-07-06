@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nerko+One&display=swap" rel="stylesheet">
+    <title>Games world</title>
+</head>
+<body>
+    <!--Nav-bar-->
+    <div class="w-100">
+        <nav id="navbar" class="navbar navbar-expand-lg rounded-5 my-5">
+            <div class="container py-2">
+                <div class="navbar-brand d-flex align-items-center justify-content-center ms-2">
+                    <img src="logo-sm.png" alt="" width="50">
+                    <h4 class="text-uppercase fw-semibold text-white ms-1 fw-lighter">Game reviews</h4>
+                </div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 pe-3" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-pills" id="pills-tab" role="tablist">
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter active" id="pills-mmporg-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-mmporg" type="button" role="tab"
+                            aria-controls="pills-home" aria-selected="true">mmorpg</button>
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter" id="pills-shooter-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-shooter" type="button" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">shooter</button>
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter" id="pills-sailing-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-sailing" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">sailing</button>
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter" id="pills-permadeath-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-permadeath" type="button" role="tab"
+                            aria-controls="pills-disabled" aria-selected="false">permadeath</button>
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter" id="pills-superhero-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-superhero" type="button" role="tab"
+                            aria-controls="pills-disabled" aria-selected="false">superhero</button>
+                        <button class="nav-link rounded-pill text-white text-uppercase px-2 fw-lighter" id="pills-pixel-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-pixel" type="button" role="tab"
+                            aria-controls="pills-disabled" aria-selected="false">pixel</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--all games-->
+    <section class="mb-5" id="allGames">
+        <div class="container">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-mmporg" role="tabpanel"
+                    aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="mmorpg">
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-shooter" role="tabpanel" aria-labelledby="pills-shooter-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="shooter">
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-sailing" role="tabpanel" aria-labelledby="pills-sailing-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="sailing">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-permadeath" role="tabpanel" aria-labelledby="pills-permadeath-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="permadeath">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-superhero" role="tabpanel" aria-labelledby="pills-superhero-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="superhero">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-pixel" role="tabpanel" aria-labelledby="pills-pixel-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-4 g-4" id="pixel">
+
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!--onclick game-->
+    <section class="d-none" id="oneGame">
+        <div class="container text-white my-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3>Details</h3>
+                <i class="fas fa-close fa-2x" id="closeGame"></i>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://www.freetogame.com/g/582/thumbnail.jpg" alt="game image" class="gameImage w-100">
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center mb-2 ms-2">
+                        <h2>Title: </h2>
+                        <h2 class="gameTitle"></h2>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 ms-2 rounded-3">
+                        <p>Category: </p>
+                        <p class="gameCategory px-2 py-1 ms-2 rounded-3">Mmorpg</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 ms-2 rounded-3">
+                        <p>Platform: </p>
+                        <p class="gamePlatform px-2 py-1 ms-2 rounded-3">Mmorpg</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-2 ms-2 rounded-3">
+                        <p>Status: </p>
+                        <p class="gameStatus px-2 py-1 ms-2 rounded-3">Live</p>
+                    </div>
+                    <p class="gameDescription mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil exercitationem cumque officia ratione voluptas sapiente. Exercitationem in earum ratione provident, excepturi, blanditiis nisi, itaque eligendi praesentium iusto animi ad?</p>
+                    <a href="" target="_blank" class="btn btn-outline-primary text-white" id="gameUrl">Show Game</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="loading">
+        <span class="loader"></span>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

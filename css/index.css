@@ -1,0 +1,107 @@
+body{
+    font-family: "Merienda", cursive;
+    background-image: url('../Game-Background-Graphics-76306020-1.jpg');
+    overflow: hidden;
+}
+.navbar{
+    background-color: #123056;
+    width: 80%;
+    left: 11%;
+    right: 9%;
+}
+.nav-link{
+    transition: 0.2s;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.nav-link:hover{
+    background-color: #0D6EFD ;
+}
+.card{
+    transition-duration: 0.3s;
+    background-color: #123056;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.07,1.07);
+}
+.card:hover .overlay{
+    opacity: 0%;
+}
+.overlay{
+    height: 100%;
+    opacity: 30%;
+    transition-duration: 0.3s;
+}
+.game-status{
+    transition-duration: 0.3s;
+}
+.game-status:hover{
+    background-color: #0D6EFD !important;
+}
+.game-name h6{
+    font-size: 12px;
+    font-weight: 600;
+}
+.game-description{
+    height: 100px;
+    overflow: hidden;
+}
+.card-footer{
+    font-size: 10px;
+}
+.fa-close{
+    color: #6C757D;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.fa-close:hover{
+    color: #fff;
+}
+.gameCategory,.gamePlatform,.gameStatus{
+    background-color: #0D6EFD;
+}
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  #loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #123056;
+    z-index: 9999;
+  }
