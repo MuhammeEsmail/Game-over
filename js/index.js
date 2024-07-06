@@ -367,7 +367,7 @@ $(window).on('scroll',function(){
 $(document).ready(function(){
   $('.loader').fadeOut(500,function(){
     $('#loading').slideUp(500,function(){
-      $('body').css('overflow','scroll')
+      $('body').css('overflow-y','scroll')
     })
   })
 })
